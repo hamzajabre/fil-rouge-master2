@@ -24,7 +24,7 @@ $mail->isHTML(true); // Permet l'interprétation de l'HTML dans le mail
 $mail->CharSet = 'UTF-8';
 $mail->Encoding = 'base64';
 $mail->Subject = 'test';
-$body = '<p>votre compte a été crée avec succès</p>';
+$body = '<p>'Bonjour '.$name_user.' '.$first_name_user.' votre compte a été crée avec succès</p>';
 $mail->Body = $body;
 try {
     $mail->send();
